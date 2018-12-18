@@ -23,7 +23,8 @@ SOURCES += \
     stockglobal.cpp \
     stockstruct.cpp \
     stockthreadalldate.cpp \
-    stockthreadharden.cpp
+    stockthreadharden.cpp \
+    stockcodenotepad.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -43,4 +44,5 @@ HEADERS += \
     stockglobal.h \
     stockstruct.h \
     stockthreadalldate.h \
-    stockthreadharden.h
+    stockthreadharden.h \
+    stockcodenotepad.h

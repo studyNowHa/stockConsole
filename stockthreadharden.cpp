@@ -13,11 +13,10 @@ void stockThreadHarden::run()
     QVector<stockStruct> stock_vector_struct;
     qDebug("stockThreadHarden is runing!");
     while(1){
+        stock_vector_struct.clear();
         if(stock_global_date.contains(";",Qt::CaseInsensitive)){
-            qDebug("if");
             QString stock_date = stock_global_date;
             QStringList stock_list_date = stock_date.split(";");//分组
-            qDebug("starting...");
             QStringList stock_list_date_filter_9 = stock_list_date.filter(stock_regexp_9);
             QStringList stock_list_date_filter_10 = stock_list_date.filter(stock_regexp_10);
             //qDebug("QStringList_9 size=%d",stock_list_date_filter_9.size());
@@ -71,8 +70,9 @@ void stockThreadHarden::run()
                 }
                 qDebug((sTheme.toStdString()+"\r\n").c_str());
             }
-            break;
+            //break;
         }
+        sleep(3);
     }
 }
 

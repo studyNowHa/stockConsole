@@ -5,6 +5,8 @@
 #include "stockdata.h"
 #include "stockdataparse.h"
 #include "stockglobal.h"
+#include "stockcode.h"
+#include "stockcodenotepad.h"
 
 extern QVector<stockStruct> stock_struct_qvector;
 
